@@ -14,8 +14,11 @@ public class Map {
     private int width;
     private int height;
 
-    public Map(){
-        map = null;
+    private String name;
+
+    public Map(String mapName){
+        this.name = mapName;
+        this.map = null;
     }
 
     public void readMap(String fileName){
