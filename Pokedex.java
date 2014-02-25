@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.io.*;
 
 public class Pokedex {
@@ -9,12 +10,12 @@ public class Pokedex {
     }
 
     public void addPokemon() {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Scanner in = new Scanner(System.in);
 
         String pokemonName = null;
 
         try {
-            pokemonName = br.readLine();
+            pokemonName = in.nextLine();
             System.out.println(pokemonName);
             Thread.sleep(4000);
             pokemonList.add(PokemonIdentify.newPokemon(pokemonName));
