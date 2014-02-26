@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import java.io.Serializable;
 
-public class MapList{
+public class MapList implements Serializable{
 
     private ArrayList<Map> maplist;
 
